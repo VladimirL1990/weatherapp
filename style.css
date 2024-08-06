@@ -1,0 +1,123 @@
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 10px;
+	color: #3e3e3e;
+	font: 17px 'Lato', Arial, Helvetica, sans-serif;
+	background-color: blanchedalmond;
+}
+h1 {
+	margin: 15px 0;
+	font-size: 28px;
+}
+form {
+	display: flex;
+	gap: 20px;
+}
+input {
+	width: 175px;
+	padding: 5px;
+	outline: none;
+	border: 5px solid #eb6e16;
+	border-radius: 15px 5px;
+	box-shadow: 5px 5px 5px 5px #eb6e16;
+	justify-content: center;
+	font: 17px 'Lato', Arial, Helvetica, sans-serif;
+	background-color: #fafafa ;
+}
+button{
+	width: 90px;
+	border: none;
+	border-radius: 15px 5px;
+	box-shadow: 5px 5px 5px 5px black;
+	color: #fafafa;
+	background-color:  #eb6e16;
+	font: 700 15px 'Lato', Arial, Helvetica, sans-serif;
+	transition: .4s;
+	cursor: pointer;
+}
+button:hover {
+	background: linear-gradient(45deg, #ff0,#0f0,#00f,#ff0000,#ff00a2);;
+}
+.weather {
+	display: flex;
+	gap: 5px;
+	width: 310px;
+	height: 150px;
+	justify-items: auto;
+	margin-top: 15px;
+	padding: 15px;
+	border: 2px solid #eb6e16;
+	border-radius: 30px 10px;
+	background-color: #83eaf1;
+	box-shadow: 5px 5px 5px 5px #eb6e16;
+}
+.city{
+	overflow: hidden;
+	display: block;
+	width: 180px ;
+	margin-bottom: 15px;
+	color: #eb6e16;
+	font-size: 38px;
+	font-weight: 900;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+span{
+	display: block;
+	margin-top: 5px;
+}
+span b {
+	color: #eb6e16;
+}
+.right {
+	position: relative;
+	padding-top: 40px;
+}
+img {
+	position: absolute;
+	top: -15px;
+	right: 0;
+	width: 80px;
+	height: 80px;
+}
+.temp {
+	color: #0060ff;
+	font-size: 38px;
+	font-weight: 900;
+	text-align: right ;
+}
